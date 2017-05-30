@@ -1,0 +1,576 @@
+/*****************************************************************************
+*  CSS styles for the library pages
+*
+*
+* Author: Phil Legge
+*****************************************************************************/
+
+/* Whole page styling */
+
+body { 
+	font-family: Calibri, sans-serif;
+	color: #8b8b7a;
+	background-color:#f1f1f1;
+	}
+	
+/* STRUCTURE */
+
+.pagewrap {
+	padding: 5px;
+	width: 960px;
+	margin: 20px auto 0px auto;
+	position:relative;
+	height:1100px;
+	display:block;
+	}
+	
+#main_pagewrap{
+	width: 960px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top:5px;
+	margin-bottom:0px;
+	}
+	
+#main_header{
+	width:auto;
+	background-color:#109A81;
+	}
+	
+#main_header img{
+	width:960px;
+	}
+
+#main_header h1{
+	padding-left:15px;
+	color:#fff;
+	margin-top:-5px;
+	margin-bottom:-10px;
+	}
+	
+#main_middle{
+	margin-top:40px;
+	background-color:#fff;
+	padding-left:30px;
+	padding-bottom:20px;
+	}
+	
+.option_header {
+	width:auto;
+	min-height: 100px;
+	padding: 0 25px;
+	border-radius: 5px 15px;
+	box-shadow: 5px 5px 2px #8b8b7a;
+	background-image:url("../../images/option_banner.png") inherit;
+	background-color:#fff;
+	color:#8b8b7a;
+	}
+
+.option_header h1{
+	margin-top:-20px;
+	margin-bottom:-20px;
+	color:rgb(0,88,149);
+	}
+
+.option_header h3{
+	color:rgb(16,154,129);
+	}
+	
+.option_content {
+	width: 210px;
+	float: left;
+	padding: 5px 15px;
+	background-color:#fff;
+	height:760px;
+	position:relative;
+	}
+	
+.option_content p{
+	margin-top:-5px;
+	}
+
+.option_middle {
+	width: 364px; 
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 15px 5px 15px;
+	background-color:#fff;
+	height:760px;
+	}
+	
+.option_middle a{
+	margin: 10px 0px 10px 0px;
+	display:inline-block;
+}
+
+.option_middle iframe{
+	border:none;
+}
+
+.option_middle img{
+	max-width:364px;
+}
+
+.option_sidebar {
+	width: 260px;
+	padding: 5px 15px;
+	float: left;
+	background-color:#fff;
+	overflow:hidden;
+	height:760px;
+	}
+.option_sidebar .inner{
+	overflow: auto;
+	max-height:700px;
+	margin:0px -25px -20px 0px;
+	padding-right:0px;
+
+	}
+
+.option_footer {
+	margin-top:40px;
+	clear: both;
+	padding: 0 15px;
+	}
+
+#content {
+	background: #005894;
+	}
+	
+#sidebar {
+	background: #005894;
+	}
+	
+.option_header, .option_content, .option_middle, .option_sidebar {
+	margin-bottom: 25px;
+	}
+
+.option_header, .content, .middle, .sidebar{
+	border: solid 1px #5a5a5a;
+	}
+	
+ .option_content h2, .option_middle h2, .option_sidebar  h2 {
+	color:rgb(0,88,149);
+	}
+	
+#crn {
+	margin-top:-5px;
+	text-align:right;
+	font-size:8pt;
+	padding:4px;
+	} 
+	
+#dec{
+	display:block;
+	margin-right:0;
+	margin-left:auto;
+	}
+	
+#chhs{
+	float:left;
+	display:inline;
+	position: relative;
+	font-size:9px;
+	}	
+	
+#chhs_logo{
+	display:inline;
+	position: relative;
+	}
+
+#home{
+	text-align:center;
+	}
+	
+#home a {
+	text-decoration:none;
+	color:#8b8b7a;	
+	}
+	
+#home a:visited {	
+	color:#5a5a5a;
+	}
+
+#myTag{
+	margin-top:-30px;
+	margin-bottom:-15px;
+	margin-left:-55px;
+	font-size:9pt;
+	text-align:center;
+	}
+#aim{
+	float:left; 
+	margin-top:10px;
+	display:inline-block; 
+	position:relative;
+	}
+
+
+/*************************Navigation Menu on Index page********************************/	
+
+
+	#navMenu ul {
+		background: #3c6eb9;
+		border-radius: 5px 5px 5px 5px;
+		float: left;
+		-webkit-transition: .5s;
+		transition: .5s;
+	}
+	
+	#navMenu li {
+		float: left;
+		position: relative;
+		width: 150px;
+		list-style: none;
+		-webkit-transition: .5s;
+		transition: .5s;
+	}
+	
+	#navMenu > ul > li > a, h1 {
+		text-transform: uppercase;
+	}
+	
+	#navMenu a {
+		display: block;
+		text-decoration: none;
+		padding: 5px 15px;
+		color: #d6d6d6;
+	}
+
+	#navMenu ul ul {
+		position: absolute;
+		left: 0;
+		top: 100%;
+		visibility: hidden;
+		opacity: 0;
+	}
+	
+	#navMenu ul ul ul {
+		left: 100%;
+		top: 0;
+	}
+	
+	#navMenu ul ul li{
+	margin-left:-20px;
+	}
+	
+	#navMenu li:hover, #navMenu li:hover li{
+		background: #628bc7;
+	}
+	
+	#navMenu li li:hover, #navMenu li li:hover li{
+		background: #8aa8d5;
+	}
+	
+	#navMenu li li li:hover {
+		background: #628bc7;
+	}
+	
+	#navMenu li:hover > ul {
+		visibility: visible;
+		opacity: 1 ;
+	}
+	
+/*include focus and active for touch screen users*/
+	
+	#navMenu li:focus, #navMenu li:focus li{
+		background: #628bc7;
+	}
+	
+	#navMenu li li:focus, #navMenu li li:focus li{
+		background: #8aa8d5;
+	}
+	
+	#navMenu li li li:focus {
+		background: #628bc7;
+	}
+	
+	#navMenu li:focus > ul {
+		visibility: visible;
+		opacity: 1 ;
+	}
+		
+	#navMenu li:active, #navMenu li:active li{
+		background: #628bc7;
+	}
+	
+	#navMenu li li:active, #navMenu li li:active li{
+		background: #8aa8d5;
+	}
+	
+	#navMenu li li li:active{
+		background: #628bc7;
+	}
+	
+	#navMenu li:active > ul {
+		visibility: visible;
+		opacity: 1 ;
+	}
+
+/*these are the classes associated with the library site*/
+
+.navBar{
+	width:920px;
+}
+
+.option{
+	border: solid 1px #8b8b7a;
+	width:94%;
+	padding: 5px 10px;
+	margin:5px 10px 5px 0px;
+	background-color:#fff;
+	overflow:hidden;
+	}
+	
+.option img{
+    display: inline;
+    max-width:70px;
+    max-height:100px;
+    width:auto;
+    height:auto;
+	margin:5px;
+	border: solid 1px #8b8b7a;
+	}
+	
+.option h3, .option h4, .option h5{
+	display:inline;
+	margin-left:10px;
+	margin-right:auto;
+	margin-top:5px;
+	margin-bottom:5px;
+	position:relative;
+}
+
+.option a{
+	display:block;
+}
+
+
+.content_rounds{
+	border-radius: 10px 10px 5px 5px;
+	box-shadow: 3px 3px 1px #8b8b7a;
+	border: solid 1px #8b8b7a;
+	}
+	
+.collapse_wrap{
+	min-height:100px;
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+  	}
+	
+.small_wrap{
+	position: absolute;
+  	}
+	
+.resourceLinks {
+	min-width:92%;
+	border-radius: 5px 5px 5px 5px;
+	position: relative;
+	border: solid 1px #8b8b7a;
+	background-color:#eee;
+	margin:2px 2px 4px 0px;
+	}
+
+.resourceLinks a {
+	text-decoration:none;
+	text-transform: uppercase;
+	color:#8b8b7a;
+	padding: 10px 10px;
+	display:block;
+	font-size:11pt;
+	}
+	
+.resourceLinks :hover{
+	color:#5b5b4a;
+	background-color:#f5f5dc;
+	border-color: #5b5b4a;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.this_side{
+	float:left;
+	min-width:200px;
+	max-width:550px;
+	width:auto;
+	}
+	
+.this_side_small{
+	float:left;
+	min-width:100px;
+	max-width:550px;
+	width:auto;
+	}
+	
+.this_side_long{
+	float:left;
+	min-width:200px;
+	max-width:650px;
+	width:auto;
+	}
+	
+.other_side{
+	float:right;
+	display:inline;
+	min-width:200px;
+	max-width:450px;
+	}
+	
+.other_side_small{
+	float:right;
+	display:inline;
+	min-width:100px;
+	max-width:450px;
+	}
+	
+.op1{
+	width:240px;
+	position: relative;
+}
+
+.op1 .op1 h3 {
+	position:relative;
+	padding-top:100px;
+	}
+	
+	
+.op1:hover  > .collapse_wrap  {
+	-webkit-transition: .5s;
+	transition: .5s;
+	visibility: visible;
+	position:relative;
+	opacity: 1 ;
+	}
+	
+.op1 h3{
+	padding-top:10px;
+	}
+	
+.buttons {
+	min-width:90%;
+	margin-bottom:10px;
+	position:absolute;
+	bottom:0;
+	}
+	
+.breadCrumb {
+	margin-top:-20px;
+	margin-left:-40px;
+	}	
+	
+.breadCrumb a{
+	color:#d6d6d6;
+	text-decoration:none;
+	}
+	
+.breadCrumb a:hover{
+	color:#8b8b7a;
+	}
+	
+	
+.breadCrumb li{
+	display:inline-block;
+	list-style:none;
+	color:#d6d6d6;
+	}
+	
+.lastCell:hover {
+	position:relative;
+	bottom:0;
+	
+	}
+	
+.taskHeader {
+	float:right;
+	display:inline;
+	margin-top:-110px;
+	}
+
+/**************styles for under construction page************************************/
+#UC{ 
+	margin-left:70px;
+	margin-top:70px;
+	}
+	
+#UC a {
+	text-decoration:none;
+	color:brown;
+	}
+	
+
+
+#UC a:hover {
+	text-decoration:none;
+	color:silver;
+	transition: all 0.3s ease-in;
+	background-color:ffffcc;
+	opacity:1;
+	}	
+/************************************************************************************
+MEDIA QUERIES  ----->  crap past this point fix it
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#middle {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	
+	#sidebar {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+
+	
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#content {
+		width: auto;
+		float: none;
+	}
+	
+	#middle {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	#sidebar {
+		display: none;
+	}
+
+}
+
+
+
